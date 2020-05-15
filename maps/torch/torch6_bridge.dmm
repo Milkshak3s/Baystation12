@@ -9723,7 +9723,7 @@
 /area/hallway/primary/bridge/fore)
 "uM" = (
 /obj/machinery/camera/network/command{
-	c_tag = "Sol Government Representative - Office";
+	c_tag = "Third Imperium Representative - Office";
 	dir = 4;
 	network = list("Command","Security")
 	},

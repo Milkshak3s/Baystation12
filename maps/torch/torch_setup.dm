@@ -5,13 +5,13 @@
 
 /datum/map/torch/get_map_info()
 	. = list()
-	. +=  "You're aboard the <b>[station_name]</b>, an Expeditionary Corps starship. Its primary mission is looking for undiscovered sapient alien species, and general exploration along the way."
-	. +=  "The vessel is staffed with a mix of SCG government personnel and hired contractors."
-	. +=  "This area of space is uncharted, away from SCG territory. You might encounter remote outposts or drifting hulks, but no recognized government holds claim on this sector."
+	. +=  "You're aboard the <b>[station_name]</b>, an IISS starship. Its primary mission is looking for undiscovered sapient alien species, and general exploration along the way."
+	. +=  "The vessel is staffed with a mix of Third Imperium government personnel and hired contractors."
+	. +=  "This area of space is uncharted, away from Imperium territory. You might encounter remote outposts or drifting hulks, but no recognized government holds claim on this sector."
 	return jointext(., "<br>")
 
 /datum/map/torch/send_welcome()
-	var/welcome_text = "<center><img src = sollogo.png /><br /><font size = 3><b>SEV Torch</b> Sensor Readings:</font><br>"
+	var/welcome_text = "<center><img src = sollogo.png /><br /><font size = 3><b>IISS Torch</b> Sensor Readings:</font><br>"
 	welcome_text += "Report generated on [stationdate2text()] at [stationtime2text()]</center><br /><br />"
 	welcome_text += "<hr>Current system:<br /><b>[system_name()]</b><br /><br>"
 
@@ -52,5 +52,5 @@
 		welcome_text += "<br>No distress calls logged.<br />"
 	welcome_text += "<hr>"
 
-	post_comm_message("SEV Torch Sensor Readings", welcome_text)
+	post_comm_message("IISS Torch Sensor Readings", welcome_text)
 	minor_announcement.Announce(message = "New [GLOB.using_map.company_name] Update available at all communication consoles.")

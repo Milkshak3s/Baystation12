@@ -681,7 +681,7 @@
 
 /area/crew_quarters/heads/office/sgr
 	icon_state = "heads_sr"
-	name = "\improper Command - SCGR's Office"
+	name = "\improper Command - IMR's Office"
 	req_access = list(access_representative)
 
 /area/crew_quarters/heads/office/sea

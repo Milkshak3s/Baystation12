@@ -1,6 +1,6 @@
 /datum/map/torch
 	name = "Torch"
-	full_name = "SEV Torch"
+	full_name = "IISS Torch"
 	path = "torch"
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 	config_path = "config/torch_config.txt"
@@ -15,13 +15,13 @@
 	allowed_spawns = list("Cryogenic Storage", "Cyborg Storage")
 	default_spawn = "Cryogenic Storage"
 
-	station_name  = "SEV Torch"
+	station_name  = "IISS Torch"
 	station_short = "Torch"
 	dock_name     = "TBD"
-	boss_name     = "Expeditionary Command"
+	boss_name     = "IISS Command"
 	boss_short    = "Command"
-	company_name  = "Sol Central Government"
-	company_short = "SolGov"
+	company_name  = "The Third Imperium"
+	company_short = "Imperium"
 
 	map_admin_faxes = list("Corporate Central Office")
 
